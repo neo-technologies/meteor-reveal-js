@@ -1,0 +1,9 @@
+{
+  "name": "reveal-js",
+  "description": "Reveal.js",
+  "homepage": "http://github.com/neo-technologies/meteor-reveal-js",
+  "author": "NEO-Technologies",
+  "version": "1.0",
+  "git": "http://github.com/neo-technologies/meteor-reveal-js.git",
+  "packages": {}
+}
