@@ -1,9 +1,9 @@
 {
   "name": "reveal-js",
-  "description": "Reveal.js",
+  "description": "Reveal.js for Meteor",
   "homepage": "http://github.com/neo-technologies/meteor-reveal-js",
   "author": "NEO-Technologies",
-  "version": "1.0",
+  "version": "1.0.0",
   "git": "http://github.com/neo-technologies/meteor-reveal-js.git",
   "packages": {}
 }
