@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Reveal.js"
+  summary: "Reveal.js - HTML Presentation Framework"
 });
 
 Package.on_use(function (api, where) {
