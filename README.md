@@ -70,10 +70,11 @@ Reveal.configure({ autoSlide: 5000 });
 
 You can import one of the built-in theme files, as follow:
 
-`@import "packages/reveal-js/reveal.js/css/theme/`**`<theme_name>`**`.css";`
+```css
+@import "packages/reveal-js/reveal.js/css/theme/<theme_name>.css";
+```
 
-
-Replace **`theme_name`** by one of the following built-in themes:
+Replace **`<theme_name>`** by one of the following built-in themes:
 
   - `beige`
   - `blood`
@@ -88,7 +89,9 @@ Replace **`theme_name`** by one of the following built-in themes:
 
 For example:
 
-`@import "packages/reveal-js/reveal.js/css/theme/`**`default`**`.css";`
+```css
+@import "packages/reveal-js/reveal.js/css/theme/default.css";
+```
 
 
 Demo
