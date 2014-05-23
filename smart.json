@@ -3,7 +3,7 @@
   "description": "Reveal.js - HTML Presentation Framework",
   "homepage": "http://lab.hakim.se/reveal-js/",
   "author": "NEO-Technologies",
-  "version": "1.0.1",
+  "version": "2.6.2",
   "git": "https://github.com/neo-technologies/meteor-reveal-js.git",
   "packages": {}
 }
