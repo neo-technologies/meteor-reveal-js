@@ -6,7 +6,7 @@ This Meteor package adds the Reveal.js JavaScript and CSS files to the client.
 Installation
 ------------
 
-`mrt add reveal-js`
+`meteor add neo:reveal-js`
 
 
 Usage

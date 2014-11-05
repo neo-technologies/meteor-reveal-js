@@ -1,9 +1,13 @@
 Package.describe({
-  summary: "Reveal.js - HTML Presentation Framework"
+  name: 'neo:reveal-js',
+  summary: 'Reveal.js - HTML Presentation Framework',
+  version: '2.6.2',
+  git: 'https://github.com/neo-technologies/meteor-reveal-js.git'
 });
 
-Package.on_use(function (api, where) {
-  api.add_files([
+Package.onUse(function (api) {
+  api.versionsFrom('1.0');
+  api.addFiles([
 	'reveal.js/css/theme/beige.css',
 	'reveal.js/css/theme/blood.css',
 	'reveal.js/css/theme/default.css',
@@ -21,7 +25,7 @@ Package.on_use(function (api, where) {
 	'reveal.js/lib/font/league_gothic-webfont.woff'
   ], 'client', { isAsset: true });
 
-  api.add_files([
+  api.addFiles([
 	'reveal.js/js/reveal.js',
 	'reveal.js/css/reveal.css'
   ], 'client');
