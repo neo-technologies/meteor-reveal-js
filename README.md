@@ -45,10 +45,10 @@ if (Meteor.isClient) {
 }
 ```
 
-If you use a template, you must do the initialization using **`Template.*myTemplate*.onRendered()`**
+If you use a template, you must do the initialization using **`Template.myTemplate.onRendered()`**
 
 ```javascript
-Template.<template name>.onRendered( function() {
+Template.myTemplate.onRendered( function() {
   Reveal.initialize();
 });
 ```
@@ -105,7 +105,11 @@ For example:
 </head>
 ```
 
-By setting the **`id`** attribute the theme can be changed by calling `Reveal.configure({theme: *theme*})`. 
+By setting the **`id`** attribute the theme can be changed by calling **`Reveal.configure()`**. For example:
+
+```javascript
+Reveal.configure({theme: "moon"});
+```
 
 Demo
 ----
