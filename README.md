@@ -45,6 +45,14 @@ if (Meteor.isClient) {
 }
 ```
 
+If you use a template, you must do the initialization using **`Template.*myTemplate*.onRendered()`**
+
+```javascript
+Template.<template name>.onRendered( function() {
+  Reveal.initialize();
+});
+```
+
 You can use configuration values as described in the [documentation of Reveal.js](https://github.com/hakimel/reveal.js#configuration), for example:
 
 ```javascript
@@ -66,12 +74,14 @@ Reveal.configure({ autoSlide: 0 });
 Reveal.configure({ autoSlide: 5000 });
 ```
 
-**CSS**
+**Themes**
 
 You can import one of the built-in theme files, as follow:
 
-```css
-@import "packages/reveal-js/reveal.js/css/theme/<theme_name>.css";
+```html
+<head>
+  <link rel="stylesheet" href="/packages/neo_reveal-js/reveal.js/css/theme/<theme_name>.css" id="theme"/>
+</head>
 ```
 
 Replace **`<theme_name>`** by one of the following built-in themes:
@@ -89,10 +99,13 @@ Replace **`<theme_name>`** by one of the following built-in themes:
 
 For example:
 
-```css
-@import "packages/reveal-js/reveal.js/css/theme/default.css";
+```html
+<head>
+  <link rel="stylesheet" href="/packages/neo_reveal-js/reveal.js/css/theme/<theme_name>.css" id="theme"/>
+</head>
 ```
 
+By setting the **`id`** attribute the theme can be changed by calling `Reveal.configure({theme: *theme*})`. 
 
 Demo
 ----
