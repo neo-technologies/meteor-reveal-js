@@ -45,7 +45,7 @@ if (Meteor.isClient) {
 }
 ```
 
-If you use a template, you must do the initialization using **`Template.myTemplate.onRendered()`**
+If you use a template, you must do the initialization using **`Template.myTemplate.onRendered()`**.
 
 ```javascript
 Template.myTemplate.onRendered( function() {
@@ -101,7 +101,7 @@ For example:
 
 ```html
 <head>
-  <link rel="stylesheet" href="/packages/neo_reveal-js/reveal.js/css/theme/<theme_name>.css" id="theme"/>
+  <link rel="stylesheet" href="/packages/neo_reveal-js/reveal.js/css/theme/moon.css" id="theme"/>
 </head>
 ```
 
